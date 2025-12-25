@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "news"
+    label: "News & Updates"
+    folder: "src/content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "loans"
+    label: "Loan Products"
+    folder: "src/content/loans"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Loan Name", name: "title", widget: "string"}
+      - {label: "Short Description", name: "description", widget: "text"}
+      - {label: "Interest Rate", name: "interest_rate", widget: "string"}
+      - {label: "Max Amount", name: "max_amount", widget: "string"}
+      - {label: "Repayment Period", name: "repayment_period", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "select", options: ["Briefcase", "Home", "Zap", "User", "GraduationCap", "Car"], default: "Zap"}
+      - {label: "Requirements", name: "body", widget: "markdown"}
+
+  - name: "team"
+    label: "Leadership Team"
+    folder: "src/content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Bio", name: "body", widget: "markdown"}
+      
+  - name: "downloads"
+    label: "Downloads & Resources"
+    folder: "src/content/downloads"
+    create: true
+    fields:
+      - {label: "Document Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Forms", "Reports", "Policies", "Newsletters"]}
+      - {label: "File", name: "file", widget: "file"}
+      - {label: "Description", name: "description", widget: "text", required: false}
