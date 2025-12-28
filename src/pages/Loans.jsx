@@ -43,7 +43,7 @@ const Loans = () => {
         {
             title: "Development Loan",
             icon: Home,
-            rate: "1.0",
+            rate: "1.5",
             maxAmount: "KES 5M",
             period: "48 Months",
             features: ["3x your savings", "Guarantors required", "Fast processing", "Flexible repayment terms"]
@@ -51,7 +51,7 @@ const Loans = () => {
         {
             title: "Emergency Loan",
             icon: Zap,
-            rate: "1.2",
+            rate: "1.5",
             maxAmount: "KES 500k",
             period: "12 Months",
             features: ["Instant approval", "No hidden fees", "Disbursed to mobile", "Repay anytime"]
@@ -59,7 +59,7 @@ const Loans = () => {
         {
             title: "Business Capital",
             icon: Briefcase,
-            rate: "1.1",
+            rate: "1.5",
             maxAmount: "KES 10M",
             period: "36 Months",
             features: ["Asset financing available", "Grace period of 1 month", "Business advisory included", "Top-up available"]
@@ -67,7 +67,7 @@ const Loans = () => {
         {
             title: "Education Loan",
             icon: GraduationCap,
-            rate: "1.0",
+            rate: "1.5",
             maxAmount: "KES 1M",
             period: "24 Months",
             features: ["School fees direct payment (optional)", "Quick turnaround", "Low processing fee", "Flexible schedule"]
