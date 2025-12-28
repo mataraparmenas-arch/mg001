@@ -76,9 +76,9 @@ const Hero = () => {
 const Stats = () => {
     const stats = [
         { label: "Active Members", value: "15,000+", icon: Users },
-        { label: "Total Assets", value: "$50M+", icon: TrendingUp },
-        { label: "Loans Issued", value: "$35M+", icon: ShieldCheck },
-        { label: "Global Reach", value: "12 Countries", icon: Globe },
+        { label: "Total Assets", value: "ksh50M+", icon: TrendingUp },
+        { label: "Loans Issued", value: "ksh35M+", icon: ShieldCheck },
+        { label: "Global Reach", value: "12 Counties", icon: Globe },
     ];
 
     return (
